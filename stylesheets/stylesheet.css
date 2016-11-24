@@ -68,6 +68,16 @@ header h2 {
   color: #666;
 }
 
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #3b3c44;
+  text-align: center;
+}
+
 #downloads .btn {
   display: inline-block;
   text-align: center;
