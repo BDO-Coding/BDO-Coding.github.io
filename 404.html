@@ -1,0 +1,66 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--Setup-->
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+		<title>Home | BDO-Coding</title>
+	</head>
+	<body>
+		<!--Header-->
+		<header>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Pages</button>
+				<div id="myDropdown" class="dropdown-content">
+					<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+					<a href="index.html">Home</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+			<div class="container">
+				<h1></h1>
+				<h2><section id="downloads"><a href="https://github.com/BDO-Coding" class="btn btn-github"><span class="icon"></span>View on GitHub</a></section></h2>
+			</div>
+		</header>
+		<script>
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			function filterFunction() {
+				var input, filter, ul, li, a, i;
+				input = document.getElementById("myInput");
+				filter = input.value.toUpperCase();
+				div = document.getElementById("myDropdown");
+				a = div.getElementsByTagName("a");
+				for (i = 0; i < a.length; i++) {
+					if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+						a[i].style.display = "";
+					} else {
+						a[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+		<!--Context-->
+		<div class="container">
+			<section id="main_content">
+				<h3>The page is a lie!</h3>
+				<p>This is not the page that you are looking for, press <a href="index.html">here</a> to return to home</p>
+			</section>
+		</div>
+	</body>
+	<!--Footer-->
+	<div class="footer" id = footerDiv>
+		<button class="close" onclick="document.getElementById('footerDiv').style.display='none'" >Close</button>
+		Having trouble with our website or want to improve something? Contact us <a href="mailto:BDOCoding@gmail.com?Subject=I%20have%20a%20problem%20with%20the%20BDO-Coding%20webpage,%20what%20should%20I%20do?">here</a> and we’ll help you sort it out. Check the <a href="contact.html">contact</a> page for more info.
+	</div>
+	
+</html>
